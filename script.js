@@ -2,7 +2,7 @@ let logo = document.querySelector('#logo');
 let aboutLink=document.querySelector('#aboutlink');
 let skillsLink=document.querySelector('#skillslink');
 let contactLink=document.querySelector('#contactlink');
-
+//main
 
 let main=document.querySelector('#main');
 let about=document.querySelector('#about');

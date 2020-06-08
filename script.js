@@ -62,4 +62,21 @@ contactLink.addEventListener('click', function(){
     handleAnimation(contactH1, contactForm, contactAnker);
 });
 
+let modal=document.querySelector('.modal');
+let trigger=document.querySelector('.open-modal');
+let closeButton=document.querySelector('.close-modal');
+
+
+function toggleModal() {
+    modal.classList.toggle('show-modal');
+}
+
+function windowOnClick(e){
+    if(e.target===modal){
+        toggleModal();
+    }
+}
+trigger.addEventListener('click', toggleModal);
+closeButton.addEventListener('click', toggleModal);
+window.addEventListener('click', windowOnClick);
     
